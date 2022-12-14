@@ -1,0 +1,21 @@
+
+
+# arr = open("num.txt", encoding='utf-8')
+# print(arr.read())
+# a=arr.read().split()
+# print(a)
+# a.sort(key = lambda x: x[-1])
+# open("output.txt","w").write("\n".join(a))
+
+f = open("num.txt",'r')
+print(f.read())
+
+a=f.read()
+ch=list(a)
+ch.sort(reverse=True)
+srt=''.join(ch)
+print(srt)
+
+
+
+f.close()
