@@ -1,0 +1,584 @@
+#lab2
+#1##
+# import random
+# while True:
+#     user_action = input("papier,nożyce,kamień: ")
+#     possible_actions = ["kamien", "papier", "nozyce"]
+#     computer_action = random.choice(possible_actions)
+#     print(f"\nwybrałesz {user_action}, komp wyb {computer_action}.\n")
+
+#     if user_action == computer_action:
+#         print(f"Оба пользователя выбрали {user_action}. Ничья!!")
+#     elif user_action == "kamien":
+#         if computer_action == "nozyce":
+#             print("Камень бьет ножницы! Вы победили!")
+#         else:
+#             print("Бумага оборачивает камень! Вы проиграли.")
+#     elif user_action == "papier":
+#         if computer_action == "kamien":
+#             print("Бумага оборачивает камень! Вы победили!")
+#         else:
+#             print("Ножницы режут бумагу! Вы проиграли.")
+#     elif user_action == "nozyce":
+#         if computer_action == "papier":
+#             print("Ножницы режут бумагу! Вы победили!")
+#         else:
+#             print("Камень бьет ножницы! Вы проиграли.")
+# # а также обратите внимание на код ниже
+#     play_again = "" 
+#     play_again = input("Сыграем еще? (д/н): ") 
+#     if play_again.lower() != "д": 
+#         break
+
+
+#2## Pobrać od użytkownika trzy dodatnie liczby, a następnie odnaleźć i wypisać największą z nich.
+
+# a = [int(input("a1=")), int(input("a2=")), int(input("a3="))]
+# print(max(a))
+
+#3##
+# a=210
+# f=a//100
+# g=f%100
+# print(g)
+# a2=210
+# f2=a2//10
+# g2=f2%10
+# print(g2)
+# a3=210
+# f3=a3//1
+# g3=f3%1
+# print(g3)
+# print(g+g2+g3)
+
+
+#4##
+# import math
+# a=int(input("a="))
+# b=int(input("b="))
+# c=int(input("c="))
+# d=b**2-4*a*c
+# if d<0:
+#     print(" brak pierwiastków")
+
+# elif d == 0:
+#     x=-b/(2*a)   
+#     print(x)
+
+# else:
+#     sk=math.sqrt(d)
+#     x1=-b-sk/(2*a)
+#     x2=-b+sk/(2*a)
+#     print(f"x1={x1}, x2={x2}")
+
+
+#lab3
+#1##
+# import random
+# while True:
+#     user_action = input("papier,nożyce,kamień: ")
+#     possible_actions = ["kamien", "papier", "nozyce"]
+#     computer_action = random.choice(possible_actions)
+#     print(f"\nwybrałesz {user_action}, komp wyb {computer_action}.\n")
+
+#     if user_action == computer_action:
+#         print(f"Оба пользователя выбрали {user_action}. Ничья!!")
+#     elif user_action == "kamien":
+#         if computer_action == "nozyce":
+#             print("Камень бьет ножницы! Вы победили!")
+#         else:
+#             print("Бумага оборачивает камень! Вы проиграли.")
+#     elif user_action == "papier":
+#         if computer_action == "kamien":
+#             print("Бумага оборачивает камень! Вы победили!")
+#         else:
+#             print("Ножницы режут бумагу! Вы проиграли.")
+#     elif user_action == "nozyce":
+#         if computer_action == "papier":
+#             print("Ножницы режут бумагу! Вы победили!")
+#         else:
+#             print("Камень бьет ножницы! Вы проиграли.")
+# # а также обратите внимание на код ниже
+#     play_again = "" 
+#     play_again = input("Сыграем еще? (д/н): ") 
+#     if play_again.lower() != "д": 
+#         break
+
+
+#2## !!!!!!!!!!
+# from random import *
+# n= int(input("n="))
+
+
+# i=0
+# while i<n:
+#     print(randint(10,50))
+#     i+=1
+
+#3## !!!!!!!!
+# import math
+# a=[]
+# il=0
+# while sum(a)<255 :
+#     b=int(input("a="))
+#     a.append(b)
+# print(f"suma={sum(a)}")
+
+# a=[]
+# il=0
+# while math.prod(a)<50000 : #!!!!!!!!!
+#     b=int(input("a="))
+#     a.append(b)
+# print(f"iloczyn={math.prod(a)}")
+
+
+#4## !!!!!!!!
+# b=[]
+# a=0
+# while a%2==0:
+#     a=int(input("a")) 
+#     b.append(a)
+# print(a)    
+# print(f"max={max(b)} , nim={min(b)}")
+
+
+# maxx=max(b)
+# minn=min(b)
+# r=1
+# while maxx>0:  #!!!!!!!!!1
+#     r*=minn
+#     maxx-=1
+# print(r)
+
+
+#lab4
+#1## !!!!!!!!!!!!
+# n=int(input("n="))
+# i=0
+# a=[]
+# while i<n:
+#     b=int(input("b="))
+#     a.append(b)
+#     i+=1
+
+# f=a.pop(a.index(max(a)))
+# n=max(a)
+# print(f,n)
+
+
+#2##  !!!!!!!!!!
+# n = int(input("Podaj dlugość tablicy:")) 
+# list1 = [] 
+# list2 = [] 
+# i=0 
+# while i<n: 
+#     m=int(input("Poda liczba")) 
+#     list1.append(m) 
+#     i+=1 
+ 
+# print(list1) 
+# a = int(input("Podaj lewyj przedział:")) 
+# b = int(input("Podaj prawy przedział:")) 
+# for i in list1: 
+#     if a <= i and b >= i: 
+#         list2.append(i) 
+# print(list2) 
+          
+# print(len(list2))
+
+
+#3##
+# a=[]
+# b=input('Zaczynamy?')
+# while b!=0:
+#     b=int(input("b="))
+#     a.append(b)
+#     n=a[:-1]
+# print(n)    
+# sr=sum(n)/len(n)
+# print(sr)
+# list_le=[]
+# list_pr=[]
+# for j in n:
+#     if j<sr:
+#         list_le.append(j)
+#     elif j>sr:
+#         list_pr.append(j)
+
+# if len(list_le) ==len(list_pr) :
+#     print(" tablica jest symetryczna")   
+# else:
+#     print(" tablica jest nie symetryczna")   
+
+
+#4## !!!!!!!!!!!!!!!!!
+# a=[]
+# b=input('Zaczynamy?')
+# while b!=0:
+#     b=int(input("b="))
+#     a.append(b)
+#     n=a[:-1]
+# print(n)  
+# for i in set(n):
+#     if n.count(i)>1:
+#         print(i)
+
+
+#5##
+#non
+
+#lab5 
+# def sumBetweenZero(arr, N):
+#     i = 0
+#     A = []
+#     sum = 0
+#     # Find first index of 0
+#     for i in range(N):
+#         if (arr[i] == 0):
+#             i += 1
+#             break
+#     k = i
+#     # Traverse the given array arr[]
+#     for i in range(k, N, 1):
+         
+#         # If 0 occurs then add it to A[]
+#         if (arr[i] == 0):
+#             A.append(sum)
+#             sum = 0
+ 
+#         # Else add element to the sum
+#         else:
+#             sum += arr[i]
+ 
+#     # Print all the sum stored in A
+#     for i in range(len(A)):
+#         print(A[i], end = ' ')
+ 
+#     # If there is no such element print -1
+#     if (len(A) == 0):
+#         print("-1")
+ 
+# # Driver Code
+# if __name__ == '__main__':
+     
+#     arr = [ 1, 0, 3, 4, 0, 4 ]
+ 
+#     N = len(arr)
+ 
+#     # Function call
+#     sumBetweenZero(arr, N)
+
+
+
+
+#done1 
+# lst = (1,2,0,3,4,5,0,6)
+# list=[]
+# while
+# i = lst.index(0)
+# #i
+# #2
+# i2 = lst.index(0, i + 1)
+# #i2
+# #6
+# lst[i:i2]
+# #(0, 3, 4, 5)
+# a=sum(lst[i:i2])
+# print(a)
+# # #12
+
+
+
+lst=[]
+while True:  
+    
+    b=int(input("b="))
+
+    if b<0:
+        break
+    else:
+        lst.append(b)    
+            
+
+print(lst)
+
+i = lst.index(0)
+
+
+i2 = lst.index(0, i + 1)
+
+lst[i:i2]
+
+a=sum(lst[i:i2])
+print(a)
+
+    
+
+
+
+
+
+
+#3
+
+# n=int(input("n="))
+# i=0
+# mas=[]
+# mas_2=[]
+# while i<n:
+#     d=int(input("d="))
+#     mas.append(d)
+#     i+=1
+# print(mas)    
+# end=mas[-1]
+
+
+# res_sm = []
+# for i in mas:
+#     res_sm.append(sum(map(int, str(i))))
+# print(res_sm)
+
+# for j in res_sm:
+#     if j > end:
+#         ass=res_sm.index(j)
+#         mas_2.append(mas[ass])
+#         print(ass)
+#         print(mas_2)
+
+       
+
+##################################################################
+
+#lab6
+
+#zestaw1
+#1
+# m = int(input("podaj licz.1 :"))
+# s = int(input("podaj licz.2 :"))
+# a = int(input("podaj licz.3 :"))
+# n = int(input("podaj licz.4 :"))
+
+# del1=(m)/n
+# print(del1)
+# del2=(s)/n
+# print(del2)
+# del3=(a)/n
+# print(del3)
+
+#2 !!!!!!!!!
+# n = int(input("ile liczb:"))
+# list1=[]
+# list2=[]
+# i = 0 
+# while i < n :
+#     m = int(input("podaj licz. :"))
+#     list1.append(m)
+#     i+=1
+# print(list1)   
+# for i in list1: #!!!!!!!!!!!!!
+#     kwad=i**2   #!!!!!!!!!!!!!
+#     list2.append(kwad)
+
+# print(sum(list2))
+
+
+#3
+
+# a=10
+# mass=[]
+# while True:
+#     f=int(input("f="))
+   
+#     mass.append(f)
+    
+    
+#     if f%10==0 : 
+#         break
+
+# print(mass)    
+# print(min(mass))
+# len_n=len(mass)
+# print((sum(mass))/len_n)
+
+
+#4##
+# n=int(input("n="))
+# i=0
+# a=[]
+# while i<n:
+#     b=int(input("b="))
+#     a.append(b)
+#     i+=1
+
+# f=a.pop(a.index(max(a)))
+# n=a.pop(a.index(max(a)))
+# l=a.pop(a.index(max(a)))
+# ost=a.append(l)
+# print(f,n,l)
+# print(a.index(l))
+
+
+#########Zestaw nr 2
+
+#1
+#done
+
+#2##
+#done
+
+#3##
+# lst = (1,2,0,3,4,5,0,6)
+# i = lst.index(0)
+# #i
+# #2
+# i2 = lst.index(0, i + 1)
+# #i2
+# #6
+# lst[i:i2]
+# #(0, 3, 4, 5)
+# a=sum(lst[i:i2])
+# print(a)
+# #12
+
+# n=int(input("n="))
+# mass=[]
+# i=0
+# while i<n:
+#     b=int(input("a="))
+#     mass.append(b)
+#     i+=1
+# print(mass)    
+# for j in mass:
+#     if j <2 :
+#         i2 = mass.index(j<2)
+#         print("i2=",i2)
+   
+        
+# for t in mass:
+#      if t%2 ==0:
+#         i3 = mass.index(j)
+#         print("i3=",i3)    
+
+
+
+####################################################################
+
+#lab7
+#1
+# import statistics
+# oc = int(input("Pod. il. ocen\n"))
+# lista1 =[]
+
+# i=0
+# while i<oc:
+#     m=int(input("Podaj oceny\n"))
+#     lista1.append(m)
+#     i+=1
+# print(lista1)
+# for i in lista1:
+#     if i <2:
+#         print("student ma nie zaliczony semestr")
+#     else:
+#         print("student ma  zaliczony semestr")
+
+# def oblicz_srednia():
+#     sr=statistics.mean(lista1)
+#     print(sr)
+
+#     lista1.append(sr)
+#     sort_lista1=sorted(lista1)
+#     print(sort_lista1)
+
+# oblicz_srednia()
+
+# f = lista1.pop(-1)
+# print(lista1)
+
+
+#2##
+# oc = int(input("Pod. len\n"))
+# lista1 =[]
+# i=0
+
+# while i<oc:
+#     m=int(input("Podaj oceny\n"))
+#     lista1.append(m)
+#     i+=1
+# print(lista1)
+
+# def fun():
+#     suma=sum(lista1)
+#     print(f"suma: {suma}")
+#     pod=int(input("pod. el.\n"))
+#     lista1.append(pod)
+#     print(lista1)
+#     f = lista1.pop(-1)
+    
+#     print(lista1)
+#     print(f"{f} wyd. el")
+# fun()   
+
+#3## ??????????????????
+# oc = int(input("Pod. len\n"))
+# lista1 =[]
+# i=0
+
+# while i<oc:
+#     n = int(input("podaj wart. od 1 do 100"))
+
+#     lista1.append(n)
+#     i+=1
+# print()
+
+# def del_min(lista1):
+#     for del_min in range(2):
+
+
+#         lista1.pop(lista1.index(min(lista1)))
+        
+# del_min(lista1)
+# print(lista1)
+
+# ################################################################################
+# oc = int(input("Pod. len\n"))
+# lista2 =[]
+# i=0
+
+# while i<oc:
+#     n = int(input("podaj wart. od 1 do 100"))
+
+#     lista2.append(n)
+#     i+=1
+# print()
+
+# def del_max():
+#     for del_max in range(2):
+
+
+#         lista2.pop(lista2.index(max(lista2)))
+        
+# del_max()
+# print(lista2)
+
+
+# ############################################################################################
+# def g():
+#     for g in range(2):
+
+
+#         a= lista1.pop(lista1.index(min(lista1)))
+#         print("lista1 min",a)
+#         s= lista1.pop(lista1.index(max(lista1)))
+#         print("lista1 max",s)
+        
+       
+       
+# g()
+
+
+
+
+###############################################################################################################################
+
+#lab8
+#done
